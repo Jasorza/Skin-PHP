@@ -39,7 +39,7 @@ require 'header.php';
                 </div>
               </div>
 
-              <table class="table table-hover">
+             
 
                 <!-- Table head -->
                 <div id="listadoregistros">
@@ -56,7 +56,7 @@ require 'header.php';
                   </table>
                 </div>
                 <!-- Table head -->
-              </table>
+             
               <!-- Table  -->
 
               <!-- Form -->

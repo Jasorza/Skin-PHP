@@ -44,12 +44,6 @@ function listar(){
         "aProcessing": true,
         "aServerSide": true,
         dom: 'Bfrtip',
-        buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdf'
-        ],
         "ajax":{
             url:'../ajax/proveedor.php?op=listar',
             type: "get",

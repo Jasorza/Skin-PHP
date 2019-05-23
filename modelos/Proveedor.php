@@ -24,6 +24,13 @@ Class Proveedor
         return ejecutarConsulta($sql);
     }
 
+    public function eliminar($IdProveedor)
+    {
+        $sql = "DELETE FROM proveedor
+        WHERE IdProveedor = '$IdProveedor' ";
+        return ejecutarConsulta($sql);
+    }
+
     public function listar()
     {
         $sql = "SELECT *
@@ -39,11 +46,6 @@ Class Proveedor
         return consultarUnaFila($sql);
     }
 
-    public function eliminar($IdProveedor)
-    {
-        $sql = "DELETE FROM proveedor
-        WHERE IdProveedor = '$IdProveedor' ";
-        return ejecutarConsulta($sql);
-    }
+   
 }
 ?>

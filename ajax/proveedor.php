@@ -38,6 +38,11 @@ switch ($_GET["op"]){
         }
     break;
 
+    case 'eliminar':
+        $rspta=$proveedor->eliminar($IdProveedor);
+        echo $rspta ? "Proveedor eliminado" : "Proveedor no se pudo eliminar";
+    break;
+
     case 'mostrar':
         $rspta=$proveedor->mostrar($IdProveedor);
         echo json_encode($rspta);
@@ -66,10 +71,7 @@ switch ($_GET["op"]){
         echo json_encode($results);
     break;
 
-    case 'eliminar':
-        $rspta=$proveedor->eliminar($IdProveedor);
-        echo $rspta ? "Proveedor eliminado" : "Proveedor no se pudo eliminar";
-    break;
+    
 
 
 
