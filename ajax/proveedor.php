@@ -72,7 +72,7 @@ switch ($_GET["op"]){
         echo $rspta ? "Proveedor eliminado" : "Proveedor no se pudo eliminar";
     break;
 
-    break;
+
 
     }
 ?>

@@ -65,20 +65,20 @@ require 'header.php';
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>NIT</label>
-                      <input type="hidden" name="idproveedor" id="idproveedor">
-                      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese un NIT" required>
+                      
+                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese un NIT" required>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Dirección</label>
-                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese la Dirección">
+                    <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Ingrese la Dirección">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>Correo</label>
-                      <input type="text" name="correo" id="correo" class="form-control" placeholder="Ingrese el Correo">
+                      <input type="text" name="Correo" id="Correo" class="form-control" placeholder="Ingrese el Correo">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Telefono</label>
-                    <input id="telefono" name="telefono" class="form-control" type="text" placeholder="Ingrese el Telefono">
+                    <input id="Telefono" name="Telefono" class="form-control" type="text" placeholder="Ingrese el Telefono">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
