@@ -14,7 +14,7 @@ require 'header.php';
           <h4 class="mb-2 mb-sm-0 pt-1">
             <a href="index.html" target="_blank">SkinCol</a>
             <span>/</span>
-            <span>Proveedores</span>
+            <span>Insumos</span>
           </h4>
         </div>
       </div>
@@ -38,25 +38,21 @@ require 'header.php';
                   <div class="btn btn-success" onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
                 </div>
               </div>
-
-             
-
                 <!-- Table head -->
                 <div id="listadoregistros">
                   <table id="tbllistado" class="table table-striped">
                     <thead class="blue-grey lighten-4">
                       <tr>
                         <th>Opciones</th>
-                        <th>Nit</th>
-                        <th>Dirección</th>
-                        <th>Correo</th>
-                        <th>Telefono</th>
+                        <th>Proveedor</th>
+                        <th>Material</th>
+                        <th>Cantidad</th>
+                        <th>Costo</th>
                       </tr>
                     </thead>
                   </table>
                 </div>
                 <!-- Table head -->
-             
               <!-- Table  -->
 
               <!-- Form -->
