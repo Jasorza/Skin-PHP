@@ -14,7 +14,7 @@ require 'header.php';
           <h4 class="mb-2 mb-sm-0 pt-1">
             <a href="index.html" target="_blank">SkinCol</a>
             <span>/</span>
-            <span>Proveedores</span>
+            <span>Insumos</span>
           </h4>
         </div>
       </div>
