@@ -30,18 +30,18 @@ switch ($_GET["op"]){
     case 'guardaryeditar':
         if (empty($IdProveedor)) {
             $rspta=$proveedor->insertar($NIT, $Direccion, $Correo, $Telefono);
-            echo $rspta ? "Proveedor Registrado " : "Proveedor no se pudo registrar";
+            echo $rspta ? "Proveedor Registrado " : "El Proveedor no se pudo registrar";
         }
         else {
             $rspta=$proveedor->editar($IdProveedor,$NIT,$Direccion, $Correo, $Telefono);
-            echo $rspta ? "Proveedor Actualizado" : "Proveedor no se pudo actualizar";
+            echo $rspta ? "Proveedor Actualizado" : "El Proveedor no se pudo actualizar";
         }
-    break; 
+    break;
 
     case 'mostrar':
         $rspta=$proveedor->mostrar($IdProveedor);
         echo json_encode($rspta);
-    break;  
+    break;
 
     case 'listar':
         $rspta = $proveedor->listar();
