@@ -60,19 +60,19 @@ require 'header.php';
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>Proveedor</label>
-                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese un NIT" required>
+                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese el indicativo del proveedor" required>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Material</label>
-                    <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Ingrese la Dirección">
+                    <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Ingrese el indicativo del proveedor">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>Cantidad</label>
-                      <input type="text" name="Correo" id="Correo" class="form-control" placeholder="Ingrese el Correo">
+                      <input type="text" name="Correo" id="Correo" class="form-control" placeholder="Ingrese la cantidad">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Costo</label>
-                    <input id="Telefono" name="Telefono" class="form-control" type="text" placeholder="Ingrese el Telefono">
+                    <input id="Telefono" name="Telefono" class="form-control" type="text" placeholder="Ingrese el valor">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>

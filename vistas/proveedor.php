@@ -60,7 +60,7 @@ require 'header.php';
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>NIT</label>
-                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese un NIT" required>
+                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese el número NIT" required>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Dirección</label>
