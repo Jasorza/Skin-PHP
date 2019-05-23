@@ -64,11 +64,10 @@ switch ($_GET["op"]){
             "aaData"=>$data
         );
         echo json_encode($results);
-
-        break;
+    break;
 
     case 'eliminar':
-    $rspta=$proveedor->eliminar($IdProveedor);
+        $rspta=$proveedor->eliminar($IdProveedor);
         echo $rspta ? "Proveedor eliminado" : "Proveedor no se pudo eliminar";
     break;
 

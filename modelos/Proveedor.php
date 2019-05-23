@@ -45,6 +45,4 @@ Class Proveedor
         return ejecutarConsulta($sql);
     }
 }
-
-
 ?>
