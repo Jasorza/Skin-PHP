@@ -64,6 +64,7 @@ require 'header.php';
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Dirección</label>
+                    <input type="hidden" name="IdProveedor" id="IdProveedor">
                     <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Ingrese la Dirección">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">

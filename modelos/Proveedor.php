@@ -20,14 +20,14 @@ Class Proveedor
     {
         $sql = "UPDATE proveedor
         SET NIT = '$NIT', Direccion = '$Direccion', Correo = '$Correo', Telefono = '$Telefono'
-        WHERE IdProveedor = '$IdProveedor' ";
+        WHERE IdProveedor = '$IdProveedor'";
         return ejecutarConsulta($sql);
     }
 
     public function eliminar($IdProveedor)
     {
         $sql = "DELETE FROM proveedor
-        WHERE IdProveedor = '$IdProveedor' ";
+        WHERE IdProveedor = '$IdProveedor'";
         return ejecutarConsulta($sql);
     }
 
@@ -42,7 +42,7 @@ Class Proveedor
     {
         $sql = "SELECT *
         FROM proveedor
-        WHERE IdProveedor= '$IdProveedor' ";
+        WHERE IdProveedor= '$IdProveedor'";
         return consultarUnaFila($sql);
     }
 
