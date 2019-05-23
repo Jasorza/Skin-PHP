@@ -1,5 +1,4 @@
 <?php
-
 include ("../config/Conexion.php");
 
 Class Proveedor
@@ -11,7 +10,7 @@ Class Proveedor
 
     public function insertar ($NIT, $Direccion, $Correo, $Telefono)
     {
-        $sql = "INSERT INTO proveedor (NIT, Direccion, Correo, Telefono
+        $sql = "INSERT INTO proveedor (NIT, Direccion, Correo, Telefono)
         VALUES ('$NIT' , '$Direccion', '$Correo', '$Telefono')";
         return ejecutarConsulta($sql);
     }

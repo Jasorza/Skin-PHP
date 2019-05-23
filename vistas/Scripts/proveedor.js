@@ -43,12 +43,6 @@ function listar(){
         "aProcessing": true,
         "aServerSide": true,
         dom: 'Bfrtip',
-        buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdf'
-        ],
         "ajax":{
             url:'../ajax/proveedor.php?op=listar',
             type: "get",
@@ -104,7 +98,7 @@ function mostrar(IdProveedor)
 
 function eliminar(IdProveedor)
 {
-    bootbox.confirm("Está seguro que desea eliminar este proveedor?"), function(result){
+    bootbox.confirm("Está seguro que desea eliminar este proveedor?", function(result){
         if (result) {
             $.post("../ajax/proveedor.php?op=eliminar", {IdProveedor : IdProveedor}, function(e)
             {
@@ -112,7 +106,7 @@ function eliminar(IdProveedor)
                 tabla.ajax.reload();
             } );
         }
-    }
+    })
 }
 
 init();
