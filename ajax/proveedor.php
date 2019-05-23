@@ -64,6 +64,7 @@ switch ($_GET["op"]){
             "aaData"=>$data
         );
         echo json_encode($results);
+
         break;
 
     case 'eliminar':
@@ -71,6 +72,7 @@ switch ($_GET["op"]){
         echo $rspta ? "Proveedor eliminado" : "Proveedor no se pudo eliminar";
     break;
 
+    break;
 
     }
 ?>
