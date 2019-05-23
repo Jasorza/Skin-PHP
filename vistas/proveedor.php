@@ -16,18 +16,7 @@ require 'header.php';
             <span>/</span>
             <span>Dashboard</span>
           </h4>
-
-          <form class="d-flex justify-content-center">
-            <!-- Default input -->
-            <input type="search" placeholder="Buscar" aria-label="Search" class="form-control">
-            <button class="btn btn-primary btn-sm my-0 p" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-
-          </form>
-
         </div>
-
       </div>
       <!-- Heading -->
 
@@ -58,11 +47,11 @@ require 'header.php';
                     <thead class="blue-grey lighten-4">
                       <tr>
                         <th>Eliminar</th>
+                        <th>Opciones</th>
                         <th>Nit</th>
                         <th>Dirección</th>
                         <th>Correo</th>
                         <th>Telefono</th>
-                        
                       </tr>
                     </thead>
                   </table>
@@ -71,30 +60,29 @@ require 'header.php';
               </table>
               <!-- Table  -->
 
-
               <!-- Form -->
               <div class="panel-body" style="height: 400px;" id="formularioregistros">
                 <form name="formulario" id="formulario" method="POST">
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>NIT</label>
                       <input type="hidden" name="idproveedor" id="idproveedor">
-                      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese un Nombre" required>
+                      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese un NIT" required>
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Dirección</label>
                     <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese la Dirección">
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>Correo</label>
                       <input type="text" name="correo" id="correo" class="form-control" placeholder="Ingrese el Correo">
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Telefono</label>
                     <input id="telefono" name="telefono" class="form-control" type="text" placeholder="Ingrese el Telefono">
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
-                    <button class="btn btn-danger" type="button" onclick="canelarform()"><i class="fa fa-arrow-alt-circle-left"></i> Cancelar</button>
+                    <button class="btn btn-danger" type="button" onclick="cancelarform()"><i class="fa fa-arrow-alt-circle-left"></i> Cancelar</button>
                   </div>
                 </form>
               </div>
