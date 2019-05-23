@@ -13,19 +13,8 @@
   <link rel="stylesheet" href="../public/css/style.min.css">
   <!--<link rel="stylesheet" href="css/estilos.css" />-->
   <link rel="shortcut icon" type="" href="../public/favicon.ico" />
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="../public/datatables/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/datatables/buttons.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/datatables/responsive.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-select.min.css">
-
-
-
-
-
+  <!-- DATATABLES-->
+  <link rel="stylesheet" type="text/css" href="../public/DataTables/datatables.min.css"/>
 </head>
 
 <body>

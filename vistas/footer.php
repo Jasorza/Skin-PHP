@@ -35,16 +35,8 @@
 <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="../public/js/mdb.min.js"></script>
-
-<script src="../public/datatables/jquery.dataTables.min.js"></script>
-    <script src="../public/datatables/dataTables.buttons.min.js"></script>
-    <script src="../public/datatables/buttons.html5.min.js"></script>
-    <script src="../public/datatables/buttons.colVis.min.js"></script>
-    <script src="../public/datatables/jszip.min.js"></script>
-    <script src="../public/datatables/pdfmake.min.js"></script>
-    <script src="../public/datatables/vfs_fonts.js"></script>
-
-
+<!-- DATATABLES-->
+<script type="text/javascript" src="../public/DataTables/datatables.min.js"></script>
 <!-- Initializations -->
 <script type="text/javascript">
 // Animations initialization
