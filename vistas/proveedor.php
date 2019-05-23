@@ -46,7 +46,6 @@ require 'header.php';
                   <table id="tbllistado" class="table table-striped">
                     <thead class="blue-grey lighten-4">
                       <tr>
-                        
                         <th>Opciones</th>
                         <th>Nit</th>
                         <th>Dirección</th>

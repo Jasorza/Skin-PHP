@@ -1,4 +1,5 @@
 <?php
+
 include ("../config/Conexion.php");
 
 Class Proveedor
