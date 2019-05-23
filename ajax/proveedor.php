@@ -33,7 +33,7 @@ switch ($_GET["op"]){
             echo $rspta ? "Proveedor Registrado " : "El Proveedor no se pudo registrar";
         }
         else {
-            $rspta=$proveedor->editar($IdProveedor,$NIT,$Direccion, $Correo, $Telefono);
+            $rspta=$proveedor->editar($IdProveedor, $NIT, $Direccion, $Correo, $Telefono);
             echo $rspta ? "Proveedor Actualizado" : "El Proveedor no se pudo actualizar";
         }
     break;
@@ -70,10 +70,6 @@ switch ($_GET["op"]){
         );
         echo json_encode($results);
     break;
-
-    
-
-
 
     }
 ?>

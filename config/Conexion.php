@@ -26,3 +26,4 @@ function consultarUnaFila($sql)
     $row = $query->fetch_assoc();
     return $row;
 }
+?>
