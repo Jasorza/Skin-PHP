@@ -38,9 +38,6 @@ require 'header.php';
                   <div class="btn btn-success" onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
                 </div>
               </div>
-
-             
-
                 <!-- Table head -->
                 <div id="listadoregistros">
                   <table id="tbllistado" class="table table-striped">
@@ -56,7 +53,6 @@ require 'header.php';
                   </table>
                 </div>
                 <!-- Table head -->
-             
               <!-- Table  -->
 
               <!-- Form -->
@@ -64,7 +60,6 @@ require 'header.php';
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>NIT</label>
-                      
                       <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese un NIT" required>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
