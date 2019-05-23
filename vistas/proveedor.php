@@ -57,7 +57,7 @@ require 'header.php';
                   <table id="tbllistado" class="table table-striped">
                     <thead class="blue-grey lighten-4">
                       <tr>
-                        <th>No.</th>
+                        <th>Eliminar</th>
                         <th>Nit</th>
                         <th>Dirección</th>
                         <th>Correo</th>
@@ -77,7 +77,7 @@ require 'header.php';
                   <div class="form-group col-sm-12 col-md-6 col-xl-10">
                       <label>NIT</label>
                       <input type="hidden" name="idproveedor" id="idproveedor">
-                      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese un Nombre" required>
+                      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese un NIT" required>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-10">
                     <label>Dirección</label>

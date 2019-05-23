@@ -38,6 +38,13 @@ Class Proveedor
         WHERE IdProveedor= '$IdProveedor' ";
         return consultarUnaFila($sql);
     }
+
+    public function eliminar ($IdProveedor)
+    {
+        $sql = "DELETE FROM proveedor
+        WHERE IdProveedor = '$IdProveedor' ";
+        return ejecutarConsulta($sql);
+    }
 }
 
 
