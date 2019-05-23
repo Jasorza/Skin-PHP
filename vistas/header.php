@@ -27,7 +27,6 @@
         <a class="navbar-brand waves-effect" href="index.html" target="_blank">
           <img src="../public/img/Logo Skin Black.png" style="width:150px" alt="">
         </a>
-
         <!-- Collapse -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,9 +71,7 @@
               </a>
             </li>
           </ul>
-
         </div>
-
       </div>
     </nav>
     <!-- Navbar -->
