@@ -37,8 +37,13 @@
 <script type="text/javascript" src="../public/js/mdb.min.js"></script>
 <!-- DATATABLES-->
 <script type="text/javascript" src="../public/DataTables/datatables.min.js"></script>
+
+<script src="../public/js/bootbox.min.js"></script>
 <!-- Initializations -->
+
 <script type="text/javascript">
+
+
 // Animations initialization
 new WOW().init();
 
