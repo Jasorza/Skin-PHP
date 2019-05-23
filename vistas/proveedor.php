@@ -57,11 +57,12 @@ require 'header.php';
                   <table id="tbllistado" class="table table-striped">
                     <thead class="blue-grey lighten-4">
                       <tr>
-                        <th>No.</th>
+                        <th>Eliminar</th>
                         <th>Nit</th>
                         <th>Dirección</th>
                         <th>Correo</th>
                         <th>Telefono</th>
+                        
                       </tr>
                     </thead>
                   </table>

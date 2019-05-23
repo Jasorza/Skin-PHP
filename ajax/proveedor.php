@@ -25,6 +25,7 @@ if (isset($_POST["Telefono"])) {
     $Telefono=$_POST["Telefono"];
 }
 
+
 switch ($_GET["op"]){
     case 'guardaryeditar':
         if (empty($IdProveedor)) {
@@ -48,7 +49,10 @@ switch ($_GET["op"]){
 
     while ($reg=$rspta->fetch_object()) {
          $data[]=array(
-            "0"=>$reg->IdProveedor,
+            "0"=>($reg->Correo)?'<button class="btn btn-warning" onclick="mostrar('.$reg->IdProveedor.')"><i class="fa fa-pencil"></i></button>'.
+            ' <button class="btn btn-danger" onclick="desactivar('.$reg->IdProveedor.')"><i class="fa fa-close"></i></button>':
+            '<button class="btn btn-warning" onclick="mostrar('.$reg->IdProveedor.')"><i class="fa fa-pencil"></i></button>'.
+            ' <button class="btn btn-primary" onclick="activar('.$reg->IdProveedor.')"><i class="fa fa-check"></i></button>',
             "1"=>$reg->NIT,
             "2"=>$reg->Direccion,
             "3"=>$reg->Correo,
