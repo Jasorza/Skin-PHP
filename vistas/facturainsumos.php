@@ -38,25 +38,21 @@ require 'header.php';
                   <div class="btn btn-success" onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
                 </div>
               </div>
-
-              <table class="table table-hover">
-
                 <!-- Table head -->
                 <div id="listadoregistros">
                   <table id="tbllistado" class="table table-striped">
                     <thead class="blue-grey lighten-4">
                       <tr>
                         <th>Opciones</th>
-                        <th>Nit</th>
-                        <th>Dirección</th>
-                        <th>Correo</th>
-                        <th>Telefono</th>
+                        <th>Proveedor</th>
+                        <th>Material</th>
+                        <th>Cantidad</th>
+                        <th>Costo</th>
                       </tr>
                     </thead>
                   </table>
                 </div>
                 <!-- Table head -->
-              </table>
               <!-- Table  -->
 
               <!-- Form -->
