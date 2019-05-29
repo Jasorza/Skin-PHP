@@ -26,7 +26,7 @@ Class FacturaInsumos
 
     public function listar ()
     {
-        $sql = "SELECT p.NIT AS Proveedor, m.IdMaterial as Material, f.Cantidad, f.Costo
+        $sql = "SELECT p.NIT, m.IdMaterial, f.Cantidad, f.Costo
                 FROM facturainsumos f, proveedor p, material m
                 WHERE f.IdProveedor = p.IdProveedor AND f.IdMaterial = m.IdMaterial";
         return ejecutarConsulta($sql);
