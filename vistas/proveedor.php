@@ -33,7 +33,7 @@ require 'header.php';
             <div class="card-body">
 
               <!-- Table  -->
-              <div class="row justify-content-end">
+              <div class="row justify-content-">
                 <div class="col-md-12 ">
                   <div class="btn btn-success" onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
                 </div>
