@@ -59,8 +59,16 @@ require 'header.php';
               <div class="panel-body" style="height: 400px;" id="formularioregistros">
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
-                      <label>Proveedor</label>
-                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese el indicativo del proveedor" required>
+                      <div class="form-group">
+                    <label for="NIT">Proveedor</label>
+                    <select class="form-control" id="NIT" placeholder="Seleciones un proveedor">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Material</label>
