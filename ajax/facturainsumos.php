@@ -1,7 +1,7 @@
 <?php
 include ("../modelos/Facturainsumos.php");
 
-$proveedor = new Proveedor();
+$facturainsumos = new FacturaInsumos();
 
 $IdFacturaInsumos="";
 $IdProveedor="";

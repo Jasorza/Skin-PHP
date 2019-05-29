@@ -2,11 +2,11 @@
 
 include ("../config/Conexion.php");
 
-Class Proveedor
+Class FacturaInsumos
 {
     public function __construct()
     {
-        
+
     }
 
     public function insertar ($IdMaterial, $Cantidad, $Costo)
@@ -26,8 +26,9 @@ Class Proveedor
 
     public function listar ()
     {
-        $sql = "SELECT *
-        FROM facturainsumos";
+        $sql = "SELECT p.NIT AS Proveedor, m.IdMaterial as Material, f.Cantidad, f.Costo
+                FROM facturainsumos f, proveedor p, material m
+                WHERE f.IdProveedor = p.IdProveedor AND f.IdMaterial = m.IdMaterial";
         return ejecutarConsulta($sql);
     }
 
@@ -47,3 +48,4 @@ Class Proveedor
 
     }
 }
+?>

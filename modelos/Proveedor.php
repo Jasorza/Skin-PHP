@@ -45,7 +45,5 @@ Class Proveedor
         WHERE IdProveedor= '$IdProveedor'";
         return consultarUnaFila($sql);
     }
-
-   
 }
 ?>
