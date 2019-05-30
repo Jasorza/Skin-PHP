@@ -29,11 +29,11 @@ if (isset($_POST["Costo"])) {
 switch ($_GET["op"]){
     case 'guardaryeditar':
         if (empty($IdFacturaInsumos)) {
-            $rspta=$facturainsumos->insertar($IdMaterial, $Cantidad, $Costo);
+            $rspta=$facturainsumos->insertar($IdProveedor, $IdMaterial, $Cantidad, $Costo);
             echo $rspta ? "Factura de insumos registrada " : "Factura de insumos no se pudo registrar";
         }
         else {
-            $rspta=$proveedor->editar($IdFacturaInsumos, $IdProveedor,$IdMaterial,$Cantidad, $Costo);
+            $rspta=$proveedor->editar($IdFacturaInsumos, $IdProveedor, $IdMaterial, $Cantidad, $Costo);
             echo $rspta ? "Factura de insumos actualizada" : "Factura de insumos no se pudo actualizar";
         }
     break; 

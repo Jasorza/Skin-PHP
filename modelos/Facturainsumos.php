@@ -9,10 +9,10 @@ Class FacturaInsumos
 
     }
 
-    public function insertar ($IdMaterial, $Cantidad, $Costo)
+    public function insertar($IdProveedor, $IdMaterial, $Cantidad, $Costo)
     {
-        $sql = "INSERT INTO facturainsumos (IdMaterial, Cantidad, Costo
-        VALUES ('$IdMaterial' , '$Cantidad', '$Costo')";
+        $sql = "INSERT INTO facturainsumos (IdProveedor, IdMaterial, Cantidad, Costo)
+        VALUES ('$IdProveedor', '$IdMaterial', '$Cantidad', '$Costo')";
         return ejecutarConsulta($sql);
     }
 
