@@ -24,12 +24,13 @@ Class FacturaInsumos
         return ejecutarConsulta($sql);
     }
 
-    public function listar ()
+    public function listar()
     {
-        $sql = "SELECT p.NIT, m.IdMaterial, f.Cantidad, f.Costo
+        $sql = "SELECT f.IdFacturaInsumos, p.NIT as Proveedor, m.Descripcion as Material, f.Cantidad, f.Costo
                 FROM facturainsumos f, proveedor p, material m
                 WHERE f.IdProveedor = p.IdProveedor AND f.IdMaterial = m.IdMaterial";
         return ejecutarConsulta($sql);
+
     }
 
     public function mostrar ($IdFacturaInsumos)

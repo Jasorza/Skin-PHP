@@ -50,8 +50,8 @@ switch ($_GET["op"]){
     while ($reg=$rspta->fetch_object()) {
          $data[]=array(
             "0"=>$reg->IdFacturaInsumos,
-            "1"=>$reg->IdProveedor,
-            "2"=>$reg->IdMaterial,
+            "1"=>$reg->Proveedor,
+            "2"=>$reg->Material,
             "3"=>$reg->Cantidad,
             "4"=>$reg->Costo,
         );
