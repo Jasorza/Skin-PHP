@@ -60,19 +60,27 @@ require 'header.php';
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <div class="form-group">
-                    <label for="NIT">Proveedor</label>
-                    <select class="form-control" id="" name="">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
+                        <label for="NIT">Proveedor</label>
+                        <select class="form-control" id="" name="">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
-                    <label>Material</label>
-                    <input type="text" name="Material" id="Material" class="form-control" placeholder="Ingrese el indicativo del proveedor">
+                    <div class="form-group">
+                        <label for="Material">Material</label>
+                        <select class="form-control" id="" name="">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>Cantidad</label>
