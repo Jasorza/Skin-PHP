@@ -61,13 +61,7 @@ require 'header.php';
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <div class="form-group">
                     <label for="NIT">Proveedor</label>
-                    <select class="form-control" id="" name="">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
+                    <select class="form-control selectpicker" id="IdProveedor" name="IdProveedor" data-live-search="true" required></select>
                   </div>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
