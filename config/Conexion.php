@@ -13,8 +13,6 @@ if (mysqli_connect_errno())
 
 
 if (!function_exists('ejecutarConsulta'))
-    
-function ejecutarConsulta($sql)
 {
 
     function ejecutarConsulta($sql)
@@ -23,6 +21,7 @@ function ejecutarConsulta($sql)
         $query = $conexion->query($sql);
         return $query;
     }
+
     function consultarUnaFila($sql)
     {
         global $conexion;
