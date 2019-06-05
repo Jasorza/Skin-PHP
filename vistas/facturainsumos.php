@@ -43,7 +43,7 @@ require 'header.php';
                   <table id="tbllistado" class="table table-striped">
                     <thead class="blue-grey lighten-4">
                       <tr>
-                        <th>Opciones</th>
+                        <th>Id</th>
                         <th>Proveedor</th>
                         <th>Material</th>
                         <th>Cantidad</th>
@@ -58,17 +58,13 @@ require 'header.php';
               <!-- Form -->
               <div class="panel-body" style="height: 400px;" id="formularioregistros">
                 <form name="formulario" id="formulario" method="POST">
-                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
-                      <div class="form-group">
-                        <label for="NIT">Proveedor</label>
-                        <select class="form-control selectpicker" id="IdProveedor" name="IdProveedor" data-live-search="true" required></select>
-                      </div>
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">                     
+                        <label>Proveedor</label>
+                        <select id="IdProveedor" name="IdProveedor"  class="form-control selectpicker"  data-live-search="true" required></select>                     
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
-                    <div class="form-group">
-                        <label for="Material">Material</label>
-                        <select class="form-control selectpicker" id="IdMaterial" name="IdMaterial" data-live-search="true" require></select>
-                      </div>
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">                   
+                        <label>Material</label>
+                        <select id="IdMaterial" name="IdMaterial" class="form-control selectpicker" data-live-search="true" required></select>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>Cantidad</label>

@@ -4,39 +4,51 @@ function init(){
     mostrarform(false);
     listar()
 
-    $("#formulario").on("submit", function (e) {
+    $("#formulario").on("submit", function(e) {
         guardaryeditar(e);
     })
+    $.post("../ajax/facturainsumos.php?op=selectProveedor", function(r){
+        $("#IdProveedor").html(r);
+        $("#IdProveedor").selectpicker('refresh');
+
+});
 }
 
-function limpiar(){
-    $("#NIT").val("");
-    $("Material").val("");
-    $("Cantidad").val("");
-    $("Costo").val("");
+function limpiar()
+{
+    $("#Material").val("");
+    $("#Cantidad").val("");
+    $("#Costo").val("");
+    $("#IdFacturaInsumos").val("");
 }
 
 function mostrarform(bandera){
     limpiar();
-    if (bandera) {
+    if (bandera) 
+    {
         $("#listadoregistros").hide();
         $("#formularioregistros").show();
         $("#btnGuardar").prop("disabled", false);
         $("#btnagregar").hide();
     }
-    else {
+    else
+    {
         $("#listadoregistros").show();
         $("#formularioregistros").hide();
         $("#btnagregar").show();
     }
 }
 
-function cancelarform(){
-    mostrarform();
+function cancelarform()
+{
+    limpiar();
+    mostrarform(false);
 }
 
-function listar() {
-    tabla = $("#tbllistado").dataTable({
+function listar() 
+{
+    tabla = $("#tbllistado").dataTable(
+        {
 
         "aProcessing":      true,
         "aServerSide":      true,
@@ -55,19 +67,21 @@ function listar() {
     }).DataTable();
 }
 
-function guardaryeditar(e){
+function guardaryeditar(e)
+{
     e.prevenDefault();
     $("#btnGuardar").prop("disabled", true);
-    var formData = FormData($("#formulario")[0]);
+    var formData = new FormData($("#formulario")[0]);
 
     $.ajax({
-        url:            "../ajax/facturainsumos.php?op=gardaryeditar",
+        url:            "../ajax/facturainsumos.php?op=guardaryeditar",
         type:           "POST",
         data:           formData,
         contentType:    false,
         processData:    false,
 
-        success:        function (datos) {
+        success:        function (datos) 
+        {
             bootbox.alert(datos);
             mostrarform(false);
             tabla.ajax.reload();
@@ -76,26 +90,47 @@ function guardaryeditar(e){
     limpiar();
 }
 
-function mostrar(IdFacturaInsumos){
-    $.post("../ajax/facturainsumos.php?op=mostrar", {IdFacturaInsumos : IdFacturaInsumos}, function(data, status){
-        data = JSON.parse(data);
-        mostrarform(true);
-        $("#NIT").val(data.NIT)
-        $("#Material").val(data.Material)
-        $("#Cantidad").val(data.Cantidad)
-        $("#Costo").val(data.Costo)
-    })
+// function mostrar(IdFacturaInsumos){
+//     $.post("../ajax/facturainsumos.php?op=mostrar", {IdFacturaInsumos : IdFacturaInsumos}, function(data, status){
+//         data = JSON.parse(data);
+//         mostrarform(true);
+//         $("#NIT").val(data.NIT)
+//         $("#Material").val(data.Material)
+//         $("#Cantidad").val(data.Cantidad)
+//         $("#Costo").val(data.Costo)
+//     })
+// }
+
+
+function mostrar(IdFacturaInsumos)
+{
+	$.post("../ajax/facturainsumos.php?op=mostrar",{IdFacturaInsumos : IdFacturaInsumos}, function(data, status)
+	{
+		data = JSON.parse(data);		
+		mostrarform(true);
+		$("#IdProveedor").val(data.IdProveedor);
+        $('#IdProveedor').selectpicker('refresh');
+        // $("#IdMaterial").val(data.IdMaterial);
+		// $('#IdMaterial').selectpicker('refresh');
+		$("#Cantidad").val(data.Cantidad);
+		$("#Costo").val(data.Costo);
+		$("IdFacturaInsumos").val(data.IdFacturaInsumos);
+	
+ 	})
 }
 
-function eliminar(IdFacturaInsumos){
-    bootbox.confirm("Esta seguro que desea eliminar esta Factura?", function(result){
-        if (result) {
-            $.post("../ajax/facturainsumos.php?op=eliminar", {IdFacturaInsumos : IdFacturaInsumos}, function(e){
-                bootbox.alert(e);
-                tabla.ajax.reload();
-            });
-        }
-    })
-}
+
+
+
+// function eliminar(IdFacturaInsumos){
+//     bootbox.confirm("Esta seguro que desea eliminar esta Factura?", function(result){
+//         if (result) {
+//             $.post("../ajax/facturainsumos.php?op=eliminar", {IdFacturaInsumos : IdFacturaInsumos}, function(e){
+//                 bootbox.alert(e);
+//                 tabla.ajax.reload();
+//             });
+//         }
+//     })
+// }
 
 init();
