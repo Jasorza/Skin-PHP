@@ -11,19 +11,38 @@ if (mysqli_connect_errno())
     exit();
 }
 
+
+if (!function_exists('ejecutarConsulta'))
     
 function ejecutarConsulta($sql)
 {
-    global $conexion;
-    $query = $conexion->query($sql);
-    return $query;
-}
 
-function consultarUnaFila($sql)
-{
-    global $conexion;
-    $query = $conexion->query($sql);
-    $row = $query->fetch_assoc();
-    return $row;
+    function ejecutarConsulta($sql)
+    {
+        global $conexion;
+        $query = $conexion->query($sql);
+        return $query;
+    }
+    function consultarUnaFila($sql)
+    {
+        global $conexion;
+        $query = $conexion->query($sql);		
+        $row = $query->fetch_assoc();
+        return $row;
+    }
+    
+    function ejecutarConsulta_retornarID($sql)
+    {
+        global $conexion;
+        $query = $conexion->query($sql);		
+        return $conexion->insert_id;			
+    }
+
+    function limpiarCadena($str)
+    {
+        global $conexion;
+        $str = mysqli_real_escape_string($conexion,trim($str));
+        return htmlspecialchars($str);
+    }
 }
 ?>

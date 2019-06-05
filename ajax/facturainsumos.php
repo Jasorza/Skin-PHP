@@ -1,5 +1,5 @@
 <?php
-include ("../modelos/Facturainsumos.php");
+include("../modelos/Facturainsumos.php");
 
 $facturainsumos = new FacturaInsumos();
 
@@ -32,10 +32,10 @@ switch ($_GET["op"]){
             $rspta=$facturainsumos->insertar($IdProveedor, $IdMaterial, $Cantidad, $Costo);
             echo $rspta ? "Factura de insumos registrada " : "Factura de insumos no se pudo registrar";
         }
-        else {
-            $rspta=$proveedor->editar($IdFacturaInsumos, $IdProveedor, $IdMaterial, $Cantidad, $Costo);
-            echo $rspta ? "Factura de insumos actualizada" : "Factura de insumos no se pudo actualizar";
-        }
+        // else {
+        //     $rspta=$proveedor->editar($IdFacturaInsumos, $IdProveedor, $IdMaterial, $Cantidad, $Costo);
+        //     echo $rspta ? "Factura de insumos actualizada" : "Factura de insumos no se pudo actualizar";
+        // }
     break; 
 
     case 'mostrar':
@@ -66,10 +66,23 @@ switch ($_GET["op"]){
 
         break;
     
-    case 'eliminar':
-        $rspta = $facturainsumos->eliminar($IdFacturaInsumos);
-        echo $rspta ? "Factura de insumos eliminada" : "factura de insumos no se pudo eliminar";
-    break;
+    // case 'eliminar':
+    //     $rspta = $facturainsumos->eliminar($IdFacturaInsumos);
+    //     echo $rspta ? "Factura de insumos eliminada" : "factura de insumos no se pudo eliminar";
+    // break;
 
+
+    case 'selectProveedor':
+		require_once "../modelos/Proveedor.php";
+		$proveedor = new Proveedor();
+		$rspta = $proveedor->select();
+		while ($reg = $rspta->fetch_object())
+		{
+            // echo '<option value=' . $reg->IdProveedor . '>' . $reg->NIT . '</option>';
+            echo '<option value="">Hola</option>';
+		}
+	break;
+
+   
     }
 

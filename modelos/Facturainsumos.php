@@ -11,18 +11,18 @@ Class FacturaInsumos
 
     public function insertar($IdProveedor, $IdMaterial, $Cantidad, $Costo)
     {
-        $sql = "INSERT INTO facturainsumos (IdProveedor, IdMaterial, Cantidad, Costo)
+        $sql = "INSERT INTO facturainsumos(IdProveedor, IdMaterial, Cantidad, Costo)
         VALUES ('$IdProveedor', '$IdMaterial', '$Cantidad', '$Costo')";
         return ejecutarConsulta($sql);
     }
 
-    public function editar ($IdFacturaInsumos, $IdProveedor, $IdMaterial, $Cantidad, $Costo)
-    {
-        $sql = "UPDATE facturainsumos
-        SET IdProveedor = '$IdProveedor', IdMaterial = '$IdMaterial', Cantidad = '$Cantidad', Costo = '$Costo'
-        WHERE IdFacturaInsumos = '$IdFacturaInsumos' ";
-        return ejecutarConsulta($sql);
-    }
+    // public function editar ($IdFacturaInsumos, $IdProveedor, $IdMaterial, $Cantidad, $Costo)
+    // {
+    //     $sql = "UPDATE facturainsumos
+    //     SET IdProveedor = '$IdProveedor', IdMaterial = '$IdMaterial', Cantidad = '$Cantidad', Costo = '$Costo'
+    //     WHERE IdFacturaInsumos = '$IdFacturaInsumos' ";
+    //     return ejecutarConsulta($sql);
+    // }
 
     public function listar()
     {
@@ -30,7 +30,6 @@ Class FacturaInsumos
                 FROM facturainsumos f, proveedor p, material m
                 WHERE f.IdProveedor = p.IdProveedor AND f.IdMaterial = m.IdMaterial";
         return ejecutarConsulta($sql);
-
     }
 
     public function mostrar ($IdFacturaInsumos)
@@ -40,13 +39,15 @@ Class FacturaInsumos
         WHERE IdFacturaInsumos= '$IdFacturaInsumos' ";
         return consultarUnaFila($sql);
     }
-    public function eliminar ($IdFacturaInsumos)
-    {
-        $sql = "DELETE *
-        FROM facturainsumos
-        WHERE IdFacturainsumos = '$IdFacturaInsumos' ";
-        return ejecutarConsulta($sql);
+    // public function eliminar ($IdFacturaInsumos)
+    // {
+    //     $sql = "DELETE *
+    //     FROM facturainsumos
+    //     WHERE IdFacturainsumos = '$IdFacturaInsumos' ";
+    //     return ejecutarConsulta($sql);
 
-    }
+    // }
+
+  
 }
 ?>

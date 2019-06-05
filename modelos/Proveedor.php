@@ -45,5 +45,12 @@ Class Proveedor
         WHERE IdProveedor= '$IdProveedor'";
         return consultarUnaFila($sql);
     }
+    public function select()
+	{
+		$sql="SELECT *
+			  FROM proveedor
+			  WHERE condicion=1";
+		return ejecutarConsulta($sql);		
+	}
 }
 ?>

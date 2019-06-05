@@ -76,5 +76,15 @@ switch ($_GET["op"]){
         echo json_encode($results);
     break;
 
+    case 'selectProveedor':
+		require_once "../modelos/Proveedor.php";
+		$proveedor = new Proveedor();
+		$rspta = $proveedor->select();
+		while ($reg = $rspta->fetch_object())
+		{
+		echo '<option value=' . $reg->IdProveedor . '>' . $reg->NIT . '</option>';			
+		}
+	break;
+
     }
 ?>
