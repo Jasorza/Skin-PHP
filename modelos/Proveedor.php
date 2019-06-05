@@ -19,7 +19,7 @@ Class Proveedor
     public function editar($IdProveedor, $Nombre, $NIT, $Direccion, $Correo, $Telefono)
     {
         $sql = "UPDATE proveedor
-        SET Nombre = $Nombre, NIT = '$NIT', Direccion = '$Direccion', Correo = '$Correo', Telefono = '$Telefono'
+        SET Nombre = '$Nombre', NIT = '$NIT', Direccion = '$Direccion', Correo = '$Correo', Telefono = '$Telefono'
         WHERE IdProveedor = '$IdProveedor'";
         return ejecutarConsulta($sql);
     }

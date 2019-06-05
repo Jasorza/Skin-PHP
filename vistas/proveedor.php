@@ -35,7 +35,7 @@ require 'header.php';
               <!-- Table  -->
               <div class="row justify-content-">
                 <div class="col-md-12 ">
-                  <div class="btn btn-success" onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
+                  <div class="btn btn-success" id="btnagregar"onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
                 </div>
               </div>
                 <!-- Table head -->
@@ -61,7 +61,8 @@ require 'header.php';
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>Nombre</label>
-                      <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Ingrese el nombre de la empresa" required>
+                      <input type="hidden" name="IdProveedor" id="IdProveedor">
+                      <input type="text" class="form-control" name="Nombre" id="Nombre" maxlength="50" placeholder="Nombre" required>
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>NIT</label>
@@ -69,7 +70,6 @@ require 'header.php';
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Dirección</label>
-                    <input type="hidden" name="IdProveedor" id="IdProveedor">
                     <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Ingrese la Dirección">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">

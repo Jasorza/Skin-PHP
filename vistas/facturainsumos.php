@@ -35,7 +35,7 @@ require 'header.php';
               <!-- Table  -->
               <div class="row justify-content-end">
                 <div class="col-md-12 ">
-                  <div class="btn btn-success" onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
+                <div class="btn btn-success" id="btnagregar"onclick="mostrarform(true)"><i class="far fa-plus-square"></i> Agregar</div>
                 </div>
               </div>
                 <!-- Table head -->

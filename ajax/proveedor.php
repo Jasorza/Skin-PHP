@@ -82,7 +82,7 @@ switch ($_GET["op"]){
 		$rspta = $proveedor->select();
 		while ($reg = $rspta->fetch_object())
 		{
-		echo '<option value=' . $reg->IdProveedor . '>' . $reg->NIT . '</option>';			
+		echo '<option value=' . $reg->IdProveedor . '>' . $reg->Nombre . '</option>';			
 		}
 	break;
 
