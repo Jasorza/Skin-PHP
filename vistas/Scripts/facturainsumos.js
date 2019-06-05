@@ -7,7 +7,7 @@ function init(){
     $("#formulario").on("submit", function(e) {
         guardaryeditar(e);
     })
-    $.post("../ajax/facturainsumos.php?op=selectProveedor", function(r){
+   $.post("../ajax/proveedor.php?op=selectProveedor", function(r){
         $("#IdProveedor").html(r);
         $("#IdProveedor").selectpicker('refresh');
 

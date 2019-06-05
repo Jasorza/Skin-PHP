@@ -77,8 +77,8 @@ switch ($_GET["op"]){
     break;
 
     case 'selectProveedor':
-		require_once "../modelos/Proveedor.php";
-		$proveedor = new Proveedor();
+		//require_once "../modelos/Proveedor.php";
+		//$proveedor = new Proveedor();
 		$rspta = $proveedor->select();
 		while ($reg = $rspta->fetch_object())
 		{

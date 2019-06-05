@@ -31,12 +31,7 @@ Class Proveedor
         return ejecutarConsulta($sql);
     }
 
-    public function listar()
-    {
-        $sql = "SELECT *
-        FROM proveedor";
-        return ejecutarConsulta($sql);
-    }
+   
 
     public function mostrar($IdProveedor)
     {
@@ -45,12 +40,19 @@ Class Proveedor
         WHERE IdProveedor= '$IdProveedor'";
         return consultarUnaFila($sql);
     }
+    public function listar()
+    {
+        $sql = "SELECT *
+        FROM proveedor p";
+        return ejecutarConsulta($sql);
+    }
+
     public function select()
 	{
 		$sql="SELECT *
 			  FROM proveedor
-			  WHERE condicion=1";
+			  WHERE condicion='1'";
 		return ejecutarConsulta($sql);		
-	}
+    }
 }
 ?>
