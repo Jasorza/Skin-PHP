@@ -44,6 +44,7 @@ require 'header.php';
                     <thead class="blue-grey lighten-4">
                       <tr>
                         <th>Opciones</th>
+                        <th>Nombre</th>
                         <th>Nit</th>
                         <th>Dirección</th>
                         <th>Correo</th>
@@ -59,8 +60,12 @@ require 'header.php';
               <div class="panel-body" style="height: 400px;" id="formularioregistros">
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
+                      <label>Nombre</label>
+                      <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Ingrese el nombre de la empresa" required>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6 col-xl-12">
                       <label>NIT</label>
-                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese el número NIT" required>
+                      <input type="text" name="NIT" id="NIT" class="form-control" placeholder="Ingrese el número NIT">
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">
                     <label>Dirección</label>

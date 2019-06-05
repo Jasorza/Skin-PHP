@@ -4,6 +4,7 @@ include ("../modelos/Proveedor.php");
 $proveedor = new Proveedor();
 
 $IdProveedor="";
+$Nombre="";
 $NIT="";
 $Direccion="";
 $Correo="";
@@ -11,6 +12,9 @@ $Telefono="";
 
 if (isset($_POST["IdProveedor"])) {
     $IdProveedor=$_POST["IdProveedor"];
+}
+if(isset($_POST["Nombre"])){
+    $Nombre=$_POST["Nombre"];
 }
 if (isset($_POST["NIT"])) {
     $NIT=$_POST["NIT"];
@@ -29,11 +33,11 @@ if (isset($_POST["Telefono"])) {
 switch ($_GET["op"]){
     case 'guardaryeditar':
         if (empty($IdProveedor)) {
-            $rspta=$proveedor->insertar($NIT, $Direccion, $Correo, $Telefono);
+            $rspta=$proveedor->insertar($Nombre, $NIT, $Direccion, $Correo, $Telefono);
             echo $rspta ? "Proveedor Registrado " : "El Proveedor no se pudo registrar";
         }
         else {
-            $rspta=$proveedor->editar($IdProveedor, $NIT, $Direccion, $Correo, $Telefono);
+            $rspta=$proveedor->editar($IdProveedor, $Nombre, $NIT, $Direccion, $Correo, $Telefono);
             echo $rspta ? "Proveedor Actualizado" : "El Proveedor no se pudo actualizar";
         }
     break;
@@ -56,10 +60,11 @@ switch ($_GET["op"]){
             $data[]=array(
                 "0"=>'<button class="btn btn-danger" onclick="eliminar('.$reg->IdProveedor.')"><i class="far fa-trash-alt"></i></button>'.
                     ' <button class="btn btn-warning" onclick="mostrar('.$reg->IdProveedor.')"><i class="fas fa-edit"></i></button>',
-                "1"=>$reg->NIT,
-                "2"=>$reg->Direccion,
-                "3"=>$reg->Correo,
-                "4"=>$reg->Telefono,
+                "1"=>$reg->Nombre,
+                "2"=>$reg->NIT,
+                "3"=>$reg->Direccion,
+                "4"=>$reg->Correo,
+                "5"=>$reg->Telefono,
             );
         }
         $results = array(

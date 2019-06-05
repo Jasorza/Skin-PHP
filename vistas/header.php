@@ -37,18 +37,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <!-- Left -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link waves-effect" href="#">Dashboard</a>
+          <ul class="navbar-nav nav.pills mr-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#" target="_blank">Usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Perfil</a>
+              <a class="nav-link waves-effect" href="proveedor.php" target="_blank">Proveedores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Tablas</a>
+              <a class="nav-link waves-effect" href="facturainsumos.php" target="_blank">Facturas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Ordenes</a>
+              <a class="nav-link waves-effect" href="#" target="_blank">Ventas</a>
             </li>
           </ul>
 

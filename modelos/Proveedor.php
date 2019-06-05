@@ -9,17 +9,17 @@ Class Proveedor
 
     }
 
-    public function insertar($NIT, $Direccion, $Correo, $Telefono)
+    public function insertar($Nombre, $NIT, $Direccion, $Correo, $Telefono)
     {
-        $sql = "INSERT INTO proveedor (NIT, Direccion, Correo, Telefono)
-        VALUES ('$NIT' , '$Direccion', '$Correo', '$Telefono')";
+        $sql = "INSERT INTO proveedor (Nombre, NIT, Direccion, Correo, Telefono)
+        VALUES ('$Nombre', '$NIT' , '$Direccion', '$Correo', '$Telefono')";
         return ejecutarConsulta($sql);
     }
 
-    public function editar($IdProveedor, $NIT, $Direccion, $Correo, $Telefono)
+    public function editar($IdProveedor, $Nombre, $NIT, $Direccion, $Correo, $Telefono)
     {
         $sql = "UPDATE proveedor
-        SET NIT = '$NIT', Direccion = '$Direccion', Correo = '$Correo', Telefono = '$Telefono'
+        SET Nombre = $Nombre, NIT = '$NIT', Direccion = '$Direccion', Correo = '$Correo', Telefono = '$Telefono'
         WHERE IdProveedor = '$IdProveedor'";
         return ejecutarConsulta($sql);
     }

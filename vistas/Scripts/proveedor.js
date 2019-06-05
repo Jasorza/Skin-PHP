@@ -11,6 +11,7 @@ function init(){
 }
 
 function limpiar(){
+    $("#Nombre").val("");
     $("#NIT").val("");
     $("#Direccion").val("");
     $("#Correo").val("");
@@ -89,6 +90,7 @@ function mostrar(IdProveedor)
     {
         data = JSON.parse(data);
         mostrarform(true);
+        $("#Nombre").val(data.Nombre);
         $("#NIT").val(data.NIT);
         $("#Direccion").val(data.Direccion);
         $("#Correo").val(data.Correo);
