@@ -32,10 +32,10 @@ switch ($_GET["op"]){
             $rspta=$facturainsumos->insertar($IdProveedor, $IdMaterial, $Cantidad, $Costo);
             echo $rspta ? "Factura de insumos registrada " : "Factura de insumos no se pudo registrar";
         }
-        // else {
-        //     $rspta=$proveedor->editar($IdFacturaInsumos, $IdProveedor, $IdMaterial, $Cantidad, $Costo);
-        //     echo $rspta ? "Factura de insumos actualizada" : "Factura de insumos no se pudo actualizar";
-        // }
+         else {
+             $rspta=$proveedor->editar($IdFacturaInsumos, $IdProveedor, $IdMaterial, $Cantidad, $Costo);
+            echo $rspta ? "Factura de insumos actualizada" : "Factura de insumos no se pudo actualizar";
+         }
     break; 
 
     case 'mostrar':
@@ -73,16 +73,16 @@ switch ($_GET["op"]){
 
 
     case 'selectProveedor':
-		require_once "../modelos/Proveedor.php";
+		include "../modelos/Proveedor.php";
 		$proveedor = new Proveedor();
-		$rspta = $proveedor->select();
+		//$rspta = $proveedor->select();
 		while ($reg = $rspta->fetch_object())
 		{
-            // echo '<option value=' . $reg->IdProveedor . '>' . $reg->NIT . '</option>';
-            echo '<option value="">Hola</option>';
+             echo '<option value=' . $reg->IdProveedor . '>' . $reg->Proveedor . '</option>';
+            //echo '<option value="">Hola</option>';
 		}
 	break;
 
    
     }
-
+?>

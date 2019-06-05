@@ -60,6 +60,7 @@ require 'header.php';
                 <form name="formulario" id="formulario" method="POST">
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">                     
                         <label>Proveedor</label>
+                        <input type="hidden" name="IdFacturaInsumos" id="IdFacturaInsumos">
                         <select id="IdProveedor" name="IdProveedor"  class="form-control selectpicker"  data-live-search="true" required></select>                     
                   </div>
                   <div class="form-group col-sm-12 col-md-6 col-xl-12">                   

@@ -24,6 +24,7 @@ Class FacturaInsumos
     //     return ejecutarConsulta($sql);
     // }
 
+
     public function listar()
     {
         $sql = "SELECT f.IdFacturaInsumos, p.Nombre as Proveedor, m.Descripcion as Material, f.Cantidad, f.Costo
@@ -32,6 +33,7 @@ Class FacturaInsumos
         return ejecutarConsulta($sql);
     }
 
+
     public function mostrar ($IdFacturaInsumos)
     {
         $sql = "SELECT *
@@ -39,6 +41,15 @@ Class FacturaInsumos
         WHERE IdFacturaInsumos= '$IdFacturaInsumos' ";
         return consultarUnaFila($sql);
     }
+
+    public function listar()
+    {
+        $sql = "SELECT f.IdFacturaInsumos, p.Nombre as Proveedor, m.Nombre as Material, f.Cantidad, f.Costo
+                FROM facturainsumos f, proveedor p, material m
+                WHERE f.IdProveedor = p.IdProveedor AND f.IdMaterial = m.IdMaterial";
+        return ejecutarConsulta($sql);
+    }
+
     // public function eliminar ($IdFacturaInsumos)
     // {
     //     $sql = "DELETE *
