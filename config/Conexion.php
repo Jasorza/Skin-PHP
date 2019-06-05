@@ -13,6 +13,8 @@ if (mysqli_connect_errno())
 
 
 if (!function_exists('ejecutarConsulta'))
+    
+function ejecutarConsulta($sql)
 {
 
     function ejecutarConsulta($sql)
