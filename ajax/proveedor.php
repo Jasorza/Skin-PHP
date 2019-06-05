@@ -79,10 +79,10 @@ switch ($_GET["op"]){
     case 'selectProveedor':
 		//require_once "../modelos/Proveedor.php";
 		//$proveedor = new Proveedor();
-		$rspta = $proveedor->select();
+		//$rspta = $proveedor->select();
 		while ($reg = $rspta->fetch_object())
 		{
-		echo '<option value=' . $reg->IdProveedor . '>' . $reg->NIT . '</option>';			
+		echo '<option value=' . $reg->IdProveedor . '>' . $reg->Nombre . '</option>';			
 		}
 	break;
 

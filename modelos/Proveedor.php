@@ -47,12 +47,12 @@ Class Proveedor
         return ejecutarConsulta($sql);
     }
 
-    public function select()
-	{
-		$sql="SELECT *
-			  FROM proveedor
-			  WHERE condicion='1'";
-		return ejecutarConsulta($sql);		
-    }
+    // public function select()
+	// {
+	// 	$sql="SELECT *
+	// 		  FROM proveedor
+	// 		  WHERE condicion='1'";
+	// 	return ejecutarConsulta($sql);		
+    // }
 }
 ?>
