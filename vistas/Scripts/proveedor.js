@@ -20,9 +20,11 @@ function limpiar(){
 }
 
 
-function mostrarform(bandera){
+function mostrarform(bandera)
+{
     limpiar();
-    if (bandera) {
+    if (bandera)
+    {
         $("#listadoregistros").hide();
         $("#formularioregistros").show();
         $("#btnGuardar").prop("disabled", false);
