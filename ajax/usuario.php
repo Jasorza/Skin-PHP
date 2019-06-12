@@ -6,7 +6,7 @@
     {
         case 'validaracceso':
             $usuario=$_POST["usuario"];
-            $clave=$_POST["clave"];
+            $password=$_POST["password"];
 
             $resultado=$acceso->validarusuario($usuario,$clave);
             if($fila=$resultado->fetch_object())
