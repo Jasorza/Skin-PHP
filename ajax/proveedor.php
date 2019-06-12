@@ -1,5 +1,5 @@
 <?php
-include ("../modelos/Proveedor.php");
+include("../modelos/Proveedor.php");
 
 $proveedor = new Proveedor();
 
@@ -76,15 +76,15 @@ switch ($_GET["op"]){
         echo json_encode($results);
     break;
 
-    case 'selectProveedor':
-		//require_once "../modelos/Proveedor.php";
-		//$proveedor = new Proveedor();
-		//$rspta = $proveedor->select();
-		while ($reg = $rspta->fetch_object())
-		{
-		echo '<option value=' . $reg->IdProveedor . '>' . $reg->Nombre . '</option>';			
-		}
-	break;
+    // case 'selectProveedor':
+	// 	//require_once "../modelos/Proveedor.php";
+	// 	//$proveedor = new Proveedor();
+	// 	//$rspta = $proveedor->select();
+	// 	while ($reg = $rspta->fetch_object())
+	// 	{
+	// 	echo '<option value=' . $reg->IdProveedor . '>' . $reg->Nombre . '</option>';			
+	// 	}
+	// break;
 
     }
 ?>

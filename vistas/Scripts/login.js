@@ -1,18 +1,18 @@
 $("#frmAcceso").on('submit',function(e)
 {
    e.preventDefault();
-   usuario=$("#usuario").val();
-   clave=$("#clave").val();
+   Email=$("#Email").val();
+   Password=$("#Password").val();
    $.post('../ajax/usuario.php?op=validaracceso',
-                {"usuario":usuario, "clave":clave},
+                {"Email":Email, "Password":Password},
                 function (data)
                 {
                     if(data==="\r\nnull")
                     {
-                        bootbox.alert("Usuario y/o Contraseña Incorrectos");
+                        bootbox.alert("Email y/o Contraseña Incorrectos");
                     }
                     else{
-                        $(location).attr("href","categoria.php");
+                        $(location).attr("href","proveedor.php");
                     }
 
                 }

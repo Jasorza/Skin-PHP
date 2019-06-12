@@ -5,13 +5,13 @@
     switch ($_GET["op"])
     {
         case 'validaracceso':
-            $usuario=$_POST["usuario"];
-            $password=$_POST["password"];
+            $Email=$_POST["Email"];
+            $Password=$_POST["Password"];
 
-            $resultado=$acceso->validarusuario($usuario,$clave);
+            $resultado=$acceso->validarusuario($Email,$Password);
             if($fila=$resultado->fetch_object())
             {
-                $_SESSION["nombre"]=$fila->nombre;
+                $_SESSION["Nombre"]=$fila->Nombre;
             }
 
             echo json_encode($fila);

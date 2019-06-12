@@ -68,6 +68,7 @@
               <a href="IncioSesion.html"
                 class="nav-link border border-light rounded waves-effect" target="_blank">
                 <i class="fas fa-user"></i>Usuario
+                <span class="hidden-xs"><?php echo $_SESSION["nombre"] ?></span>  
               </a>
             </li>
           </ul>

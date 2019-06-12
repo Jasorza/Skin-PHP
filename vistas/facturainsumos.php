@@ -1,5 +1,13 @@
 <?php
+session_start();
+if(!isset($_SESSION["Nombre"]))
+{
+  header("location:login.html");
+}
+else{
+
 require 'header.php';
+
 ?>
   <!--Main layout-->
   <main class="pt-5 mx-lg-5">
@@ -101,3 +109,7 @@ require 'header.php';
 require 'footer.php';
 ?>
 <script src="Scripts/facturainsumos.js"></script>
+
+<?php
+}
+?>
