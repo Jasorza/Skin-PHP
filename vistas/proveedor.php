@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION["nombres"]))
+if(!isset($_SESSION["Nombres"]))
 
 {
   header("location:login.html");

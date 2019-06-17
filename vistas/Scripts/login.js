@@ -7,7 +7,7 @@ $("#frmAcceso").on('submit',function(e)
                 {"Email":Email, "Contrasena":Contrasena},
                 function (data)
                 {
-                    if(data==="\r\nnull")
+                    if(data==="\r\null")
                     {
                         bootbox.alert("Email y/o Contraseña Incorrectos");
                     }

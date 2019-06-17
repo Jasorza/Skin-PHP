@@ -11,7 +11,7 @@
             $resultado=$acceso->validarusuario($Email,$Contrasena);;
             if($fila=$resultado->fetch_object())
             {
-                $_SESSION["nombres"]=$fila->Nombres;
+                $_SESSION["Nombres"]=$fila->Nombres;
             }
 
             echo json_encode($fila);

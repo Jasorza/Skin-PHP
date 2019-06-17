@@ -39,16 +39,16 @@
           <!-- Left -->
           <ul class="navbar-nav nav.pills mr-auto">
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Usuarios</a>
+              <a class="nav-link waves-effect" href="#">Usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="proveedor.php" target="_blank">Proveedores</a>
+              <a class="nav-link waves-effect" href="proveedor.php" >Proveedores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="facturainsumos.php" target="_blank">Facturas</a>
+              <a class="nav-link waves-effect" href="facturainsumos.php">Facturas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Ventas</a>
+              <a class="nav-link waves-effect" href="#" >Ventas</a>
             </li>
           </ul>
 
@@ -58,7 +58,7 @@
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <span class="hidden-xs"> <i class="fas fa-user"> </i> <?php echo $_SESSION["nombres"] ?> </span>  
+                <span class="hidden-xs"><i class="fas fa-user"></i><?php echo $_SESSION["Nombre"] ?></span>  
               </a>
               <ul class="dropdown-menu">
                   <li class="user-header" >

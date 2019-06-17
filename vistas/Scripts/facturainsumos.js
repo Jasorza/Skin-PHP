@@ -22,7 +22,8 @@ function limpiar()
     $("#IdFacturaInsumos").val("");
 }
 
-function mostrarform(bandera){
+function mostrarform(bandera)
+{
     limpiar();
     if (bandera) 
     {
