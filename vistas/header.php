@@ -53,30 +53,35 @@
           </ul>
 
           <!-- Right -->
-          <ul class="navbar-nav nav-flex-icons">
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
 
-            <!-- User Account: style can be found in dropdown.less -->
-            <li class="dropdown user user-menu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <span class="hidden-xs"> <i class="fas fa-user"> </i> <?php echo $_SESSION["nombres"] ?> </span>  
-              </a>
-              <ul class="dropdown-menu">
-                  <li class="user-header" >
-                    <p>
-                      Desarrollador de Software
-                      <small><i class="fa fa-youtube-play" aria-hidden="true"></i>www.youtube.com</small>
-                    </p>
-                  </li>
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="hidden-xs"> 
+                    <i class="fas fa-user"> </i> <?php echo $_SESSION["nombres"] ?> 
+                  </span>  
+               </a>
+                <ul class="dropdown-menu">
+                    <li class="user-header" >
+                      <p>
+                        Desarrollador de Software
+                        <small><i class="fa fa-youtube-play" aria-hidden="true"></i>www.youtube.com</small>
+                      </p>
+                    </li>
 
-                  <li class="user-footer">
-                    <div class="fa-pull-right"> 
-                      <a href="../ajax/usuario.php?op=salir" class="btn btn danger-color">Cerrar Sesión</a>
-                    </div>
-                  </li>
-              </ul>
-            </li>
-            <!-- /User Account: style can be found in dropdown.less -->
-          </ul>
+                    <li class="user-footer">
+                      <div class="pull-right"> 
+                        <a href="../ajax/usuario.php?op=salir" class="btn btn danger-color">Cerrar Sesión</a>
+                      </div>
+                    </li>
+                </ul>
+              </li>
+              <!-- /User Account: style can be found in dropdown.less -->
+            </ul>
+          </div>
+
         </div>
       </div>
     </nav>
