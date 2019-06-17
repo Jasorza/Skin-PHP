@@ -65,10 +65,10 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="IncioSesion.html"
+              <a href="#"
                 class="nav-link border border-light rounded waves-effect" target="_blank">
                 <i class="fas fa-user"></i>Usuario
-                <span class="hidden-xs"><?php echo $_SESSION["nombre"] ?></span>  
+                <span class=""><?php echo $_SESSION["Nombre"] ?></span>  
               </a>
             </li>
           </ul>
