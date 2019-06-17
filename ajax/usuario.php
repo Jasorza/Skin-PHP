@@ -8,10 +8,10 @@
             $Email=$_POST["Email"];
             $Contrasena=$_POST["Contrasena"];
 
-            $resultado=$acceso->validarusuario($Email,$Contrasena);
+            $resultado=$acceso->validarusuario($Email,$Contrasena);;
             if($fila=$resultado->fetch_object())
             {
-                $_SESSION["Nombre"]=$fila->Nombre;
+                $_SESSION["nombres"]=$fila->Nombres;
             }
 
             echo json_encode($fila);
