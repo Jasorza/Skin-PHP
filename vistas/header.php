@@ -54,23 +54,28 @@
 
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item">
-              <a href="https://www.facebook.com" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-facebook-f"></i>
+
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="hidden-xs"><i class="fas fa-user"></i><?php echo $_SESSION["Nombre"] ?></span>  
               </a>
+              <ul class="dropdown-menu">
+                  <li class="user-header" >
+                    <p>
+                      Desarrollador de Software
+                      <small><i class="fa fa-youtube-play" aria-hidden="true"></i>www.youtube.com</small>
+                    </p>
+                  </li>
+
+                  <li class="user-footer">
+                    <div class="fa-pull-right"> 
+                      <a href="../ajax/usuario.php?op=salir" class="btn btn danger-color">Cerrar Sesión</a>
+                    </div>
+                  </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a href="https://twitter.com" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#"
-                class="nav-link border border-light rounded waves-effect" target="_blank">
-                <i class="fas fa-user"></i>Usuario
-                <span class=""><?php echo $_SESSION["Nombre"] ?></span>  
-              </a>
-            </li>
+            <!-- /User Account: style can be found in dropdown.less -->
           </ul>
         </div>
       </div>
