@@ -25,16 +25,16 @@ if (!function_exists('ejecutarConsulta'))
     function consultarUnaFila($sql)
     {
         global $conexion;
-        $query = $conexion->query($sql);		
+        $query = $conexion->query($sql);
         $row = $query->fetch_assoc();
         return $row;
     }
-    
+
     function ejecutarConsulta_retornarID($sql)
     {
         global $conexion;
-        $query = $conexion->query($sql);		
-        return $conexion->insert_id;			
+        $query = $conexion->query($sql);
+        return $conexion->insert_id;
     }
 
     function limpiarCadena($str)
