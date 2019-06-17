@@ -59,21 +59,6 @@
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <span class="hidden-xs"><i class="fas fa-user"></i><?php echo $_SESSION["Nombre"] ?></span>  
-            <li class="nav-item">
-              <a href="https://www.facebook.com" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#"
-                class="nav-link border border-light rounded waves-effect" target="_blank">
-                <i class="fas fa-user"></i>Usuario
-                <span class=""><?php echo $_SESSION["Nombres"] ?></span>  
               </a>
               <ul class="dropdown-menu">
                   <li class="user-header" >
