@@ -1,10 +1,11 @@
 <?php
-// session_start();
-// if(!isset($_SESSION["Nombre"]))
-// {
-//   header("location:login.html");
-// }
-// else{
+session_start();
+if(!isset($_SESSION["nombres"]))
+
+{
+  header("location:login.html");
+}
+else{
  
 require 'header.php';
 ?>
@@ -115,5 +116,5 @@ require 'footer.php';
 <script src="Scripts/proveedor.js"></script>
 
 <?php
-// }
+}
 ?>

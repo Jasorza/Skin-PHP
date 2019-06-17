@@ -8,7 +8,7 @@
         }
 
         public function validarusuario($Email, $Contrasena){
-            $sql="SELECT Nombre
+            $sql="SELECT Nombres
                   FROM usuario 
                   WHERE Email='$Email' AND Contrasena='$Contrasena' AND Estado='1'";
             return ejecutarConsulta($sql);

@@ -68,7 +68,7 @@
               <a href="#"
                 class="nav-link border border-light rounded waves-effect" target="_blank">
                 <i class="fas fa-user"></i>Usuario
-                <span class=""><?php echo $_SESSION["Nombre"] ?></span>  
+                <span class=""><?php echo $_SESSION["Nombres"] ?></span>  
               </a>
             </li>
           </ul>
