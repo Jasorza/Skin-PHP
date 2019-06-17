@@ -57,26 +57,15 @@
             <ul class="nav navbar-nav">
 
              <!-- User Account: style can be found in dropdown.less -->
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <li>
+                <div class="btn-group">
+                <a href="#" class="btn btn-white" data-toggle="dropdown">
                   <span class="hidden-xs"> 
-                    <i class="fas fa-user"> </i> <?php echo $_SESSION["nombres"] ?> 
+                    <i class="fas fa-user"> </i> <?php echo $_SESSION["Nombres"] ?> 
                   </span>  
                </a>
-                <ul class="dropdown-menu">
-                    <li class="user-header" >
-                      <p>
-                        Desarrollador de Software
-                        <small><i class="fa fa-youtube-play" aria-hidden="true"></i>www.youtube.com</small>
-                      </p>
-                    </li>
-
-                    <li class="user-footer">
-                      <div class="pull-right"> 
-                        <a href="../ajax/usuario.php?op=salir" class="btn btn danger-color">Cerrar Sesión</a>
-                      </div>
-                    </li>
-                </ul>
+               <a href="../ajax/usuario.php?op=salir" class="btn btn danger-color"><h5 class="text-white"><i class="fas fa-power-off"></i></h5></a>
+                </div>
               </li>
               <!-- /User Account: style can be found in dropdown.less -->
             </ul>
