@@ -6,9 +6,9 @@
     {
         case 'validaracceso':
             $Email=$_POST["Email"];
-            $Password=$_POST["Password"];
+            $Contrasena=$_POST["Contrasena"];
 
-            $resultado=$acceso->validarusuario($Email,$Password);
+            $resultado=$acceso->validarusuario($Email,$Contrasena);
             if($fila=$resultado->fetch_object())
             {
                 $_SESSION["Nombre"]=$fila->Nombre;

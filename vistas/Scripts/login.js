@@ -2,9 +2,9 @@ $("#frmAcceso").on('submit',function(e)
 {
    e.preventDefault();
    Email=$("#Email").val();
-   Password=$("#Password").val();
+   Contrasena=$("#Contrasena").val();
    $.post('../ajax/usuario.php?op=validaracceso',
-                {"Email":Email, "Password":Password},
+                {"Email":Email, "Contrasena":Contrasena},
                 function (data)
                 {
                     if(data==="\r\nnull")

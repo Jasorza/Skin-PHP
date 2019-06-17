@@ -7,10 +7,10 @@
 
         }
 
-        public function validarusuario($Email, $Password){
+        public function validarusuario($Email, $Contrasena){
             $sql="SELECT Nombre
                   FROM usuario 
-                  WHERE Email='$Email' AND Password='$Password' AND Estado='1'";
+                  WHERE Email='$Email' AND Contrasena='$Contrasena' AND Estado='1'";
             return ejecutarConsulta($sql);
         }
     }
