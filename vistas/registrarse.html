@@ -75,42 +75,44 @@
               <form class="form-signin"  onsubmit="metFormulario.validar()" >
                 <div class="row">
                   <div class="col">
-                      <div class="form-label-group">
-                          <input type="text" id="Nombre" class="form-control validar" placeholder="Ingrese su nombre" autofocus>
-                          <label for="inputEmail">Nombres</label>
-                        </div>
+                    <div class="form-label-group">
+                      <input type="text" id="Nombres" class="form-control validar" placeholder="Ingrese su nombre" autofocus>
+                      <label for="Nombres">Nombres</label>
+                    </div>
                   </div>
                   <div class="col">
-                      <div class="form-label-group">
-                          <input type="text" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus>
-                          <label for="inputEmail">Apellidos</label>
-                        </div>
+                    <div class="form-label-group">
+                      <input type="text" id="Apellidos" class="form-control validar" placeholder="Email address" autofocus>
+                      <label for="Apellidos">Apellidos</label>
+                    </div>
                   </div>
-                  
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <div class="form-label-group mt-0" >
-                            <input type="password" id="password" class="form-control validar" placeholder="Ingrese su Apellido" autofocus
-                            onblur="revisar(this); revisaPass(this)">
-                            <label for="inputEmail">Contraseña</label>
-                          </div>
-                    </div>
-                  
                   <div class="col">
-                      <div class="form-label-group mt-0">
-                          <input type="password" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus 
-                          >
-                          <label for="inputEmail">Confirme Contraseña</label>
-                        </div>
+                    <div class="form-label-group mt-0">
+                      <input type="text" id="inputEmail" class="form-control validar" placeholder="Email address"
+                             onblur="revisar(this); revisarEmail(this)">
+                      <label for="inputEmail">Correo Electronico</label>
+                    </div>
                   </div>
                 </div>
-                <div class="form-label-group mt-0">
-                  <input type="text" id="inputEmail" class="form-control validar" placeholder="Email address" 
-                   onblur="revisar(this); revisarEmail(this)">
-                  <label for="inputEmail">Correo Electronico</label>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-label-group mt-0" >
+                      <input type="password" id="password" class="form-control validar" placeholder="Ingrese su Apellido" autofocus
+                             onblur="revisar(this); revisaPass(this)">
+                      <label for="password">Contraseña</label>
+                    </div>
+                  </div>
                 </div>
-
+                <div class="row">
+                  <div class="col">
+                    <div class="form-label-group mt-0">
+                      <input type="password" id="password2" class="form-control validar" placeholder="Email address" autofocus>
+                      <label for="password2">Confirme Contraseña</label>
+                    </div>
+                  </div>
+                </div>
                 <div class="btn-group col-12" role="group">
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
                     <a class="btn btn-lg btn-dark btn-block" href="IncioSesion - copia.html">Regresar</a>
