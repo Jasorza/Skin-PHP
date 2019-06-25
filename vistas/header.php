@@ -64,12 +64,18 @@
                     <i class="fas fa-user"> </i> <?php echo $_SESSION["Nombres"] ?> 
                   </span>  
                </a>
-               <a href="../ajax/usuario.php?op=salir" class="btn btn danger-color"><h5 class="text-white"><i class="fas fa-power-off"></i></h5></a>
+               <a href="../ajax/usuario.php?op=salir" class="btn btn danger-color">
+                <h5 class="text-white">
+                  <i class="fas fa-power-off"></i>
+                </h5>
+               </a>
                 </div>
               </li>
               <!-- /User Account: style can be found in dropdown.less -->
             </ul>
           </div>
+          <!-- Right -->
+
         </div>
       </div>
     </nav>
