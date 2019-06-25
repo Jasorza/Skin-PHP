@@ -72,17 +72,17 @@
           <div class="card card-signin my-5">
             <div class="card-body">
               <h1 class="display-4 text-center text-white mb-4">Crea Nueva Cuenta</h1>
-              <form class="form-signin"  onsubmit="metFormulario.validar()" >
+              <form class="form-signin"  onsubmit="metFormulario.validar()" method="POST" >
                 <div class="row">
                   <div class="col">
                       <div class="form-label-group">
-                          <input type="text" id="Nombre" class="form-control validar" placeholder="Ingrese su nombre" autofocus>
+                          <input type="text"  name="Nombres" id="Nombre" class="form-control validar" placeholder="Ingrese su nombre" autofocus>
                           <label for="inputEmail">Nombres</label>
                         </div>
                   </div>
                   <div class="col">
                       <div class="form-label-group">
-                          <input type="text" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus>
+                          <input type="text" name="Apellidos" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus>
                           <label for="inputEmail">Apellidos</label>
                         </div>
                   </div>
@@ -91,7 +91,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-label-group mt-0" >
-                            <input type="password" id="password" class="form-control validar" placeholder="Ingrese su Apellido" autofocus
+                            <input type="password" name="Password" id="Password" class="form-control validar" placeholder="Ingrese su Apellido" autofocus
                             onblur="revisar(this); revisaPass(this)">
                             <label for="inputEmail">Contraseña</label>
                           </div>
@@ -99,20 +99,20 @@
                   
                   <div class="col">
                       <div class="form-label-group mt-0">
-                          <input type="password" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus 
+                          <input type="password" name="Password" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus 
                           >
                           <label for="inputEmail">Confirme Contraseña</label>
                         </div>
                   </div>
                 </div>
                 <div class="form-label-group mt-0">
-                  <input type="text" id="inputEmail" class="form-control validar" placeholder="Email address" 
+                  <input type="text" name="Email" id="inputEmail" class="form-control validar" placeholder="Email address" 
                    onblur="revisar(this); revisarEmail(this)">
                   <label for="inputEmail">Correo Electronico</label>
                 </div>
 
                 <div class="btn-group col-12" role="group">
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="Enviar">Enviar</button>
                     <a class="btn btn-lg btn-dark btn-block" href="IncioSesion - copia.html">Regresar</a>
                 </div>
               </form>
@@ -138,6 +138,7 @@
 
   <script type="text/javascript" src="../vistas/Scripts/registrarse.js"></script>
 
+  <script src="Scripts/registrarse.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
