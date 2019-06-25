@@ -163,3 +163,18 @@
     background-color: rgba(0, 0, 0, 0.63);
   }
 
+
+
+
+
+
+
+
+
+
+
+input.error{
+  border: red solid 1px;
+  background:rgb(224, 124, 124); 
+
+}

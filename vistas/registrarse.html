@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Crear nueva cuenta de cliente</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../public/css/mdb.min.css" />
+  <link rel="stylesheet" href="../public/css/style.min.css" />
+  <link rel="stylesheet" href="../public/css/InicioSesion2.css" />
+  <link rel="stylesheet" href="../vistas/Scripts/registrarse.js">
+
+  <link rel="shortcut icon" type="image/x-ico" href="favicon.ico" />
+</head>
+
+<body class="view">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="home.html" target="_blank">
+        <img src="../public/img/Logo Skin.png" style="width:150px" alt="" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dispositivos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Limitado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Personalizador</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com" class="nav-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
+              <i class="fas fa-user"></i> Iniciar Sesión
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="mask rgba-gradient align-items-center">
+      <div class="row mb-3 fooro">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h1 class="display-4 text-center text-white mb-4">Crea Nueva Cuenta</h1>
+              <form class="form-signin"  onsubmit="metFormulario.validar()" >
+                <div class="row">
+                  <div class="col">
+                      <div class="form-label-group">
+                          <input type="text" id="Nombre" class="form-control validar" placeholder="Ingrese su nombre" autofocus>
+                          <label for="inputEmail">Nombres</label>
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="form-label-group">
+                          <input type="text" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus>
+                          <label for="inputEmail">Apellidos</label>
+                        </div>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-label-group mt-0" >
+                            <input type="password" id="password" class="form-control validar" placeholder="Ingrese su Apellido" autofocus
+                            onblur="revisar(this); revisaPass(this)">
+                            <label for="inputEmail">Contraseña</label>
+                          </div>
+                    </div>
+                  
+                  <div class="col">
+                      <div class="form-label-group mt-0">
+                          <input type="password" id="inputEmail" class="form-control validar" placeholder="Email address" autofocus 
+                          >
+                          <label for="inputEmail">Confirme Contraseña</label>
+                        </div>
+                  </div>
+                </div>
+                <div class="form-label-group mt-0">
+                  <input type="text" id="inputEmail" class="form-control validar" placeholder="Email address" 
+                   onblur="revisar(this); revisarEmail(this)">
+                  <label for="inputEmail">Correo Electronico</label>
+                </div>
+
+                <div class="btn-group col-12" role="group">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
+                    <a class="btn btn-lg btn-dark btn-block" href="IncioSesion - copia.html">Regresar</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../public/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../public/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../public/js/mdb.min.js"></script>
+
+  <script type="text/javascript" src="../vistas/Scripts/registrarse.js"></script>
+
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
